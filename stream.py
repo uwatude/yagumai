@@ -12,7 +12,7 @@ bar = st.progress(0)
 for i in range(100):
     latest_iteration.text(f'Loading　☺ {i+1}％')
     bar.progress(i + 1)
-    time.sleep(0.03)
+    time.sleep(0.04)
 
 'Completed!!!!!'
 
@@ -35,6 +35,7 @@ expander1.write('那覇！')
 text = st.sidebar.text_input('あなたの趣味は？')
 condition = st.sidebar.slider('あなたの調子は', 0, 100, 50)
 
+'← Answers from the left sidebar.'
 'Your hobby is:', text
 '調子:', condition
 
@@ -59,6 +60,4 @@ condition = st.sidebar.slider('あなたの調子は', 0, 100, 50)
 #st.bar_chart(ef) 
 
 ##種類として、st.bar_chart,line_chart,area_chartがある＃＃
-
-
 
