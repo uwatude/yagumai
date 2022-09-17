@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.title('Streamlt　超入門(^^)/')
+st.title('This is for testings(^^)/')
 
 st.write('Progress bar')
 'Start!'
@@ -14,17 +14,17 @@ for i in range(100):
     bar.progress(i + 1)
     time.sleep(0.03)
 
-'完了!!!!!'
+'Completed!!!!!'
 
 left_column, right_column = st.columns(2)
 button = left_column.button('右カラムに文字表示')
 if button:
     right_column.write('ここは右カラム')
 
-expander= st.expander('問い合わせ')
-expander.write('回答')
-expander1= st.expander('問い合わせ2')
-expander1.write('2の回答')
+expander= st.expander('せんだ')
+expander.write('ミツオ')
+expander1= st.expander('那覇')
+expander1.write('那覇！')
 
 
 #df = pd.DataFrame({
