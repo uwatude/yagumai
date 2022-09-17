@@ -1,0 +1,5 @@
+<My test link>
+https://webhosting-udemyyy.s3.ap-northeast-1.amazonaws.com/index.html
+
+This test link is for my learning and testing purposes including AWS cloud.
+The list of restaurants' menu each around my neighbors with my personal interests. 
