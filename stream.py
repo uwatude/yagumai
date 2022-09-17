@@ -61,4 +61,4 @@ condition = st.sidebar.slider('あなたの調子は', 0, 100, 50)
 ##種類として、st.bar_chart,line_chart,area_chartがある＃＃
 
 
-input()
+
