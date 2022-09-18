@@ -19,7 +19,7 @@ for i in range(100):
 'Completed!!!!!'
 
 if st.checkbox('Show Earth Image🌎'):
-    img = Image.open('C:\\Users\\Shota Uwabo\\Desktop\\python\\earth.jpg')
+    img = Image.open('earth.jpg')
     st.image(img, caption='EARTH', use_column_width=True)
 
 left_column, right_column = st.columns(2)
