@@ -1,10 +1,6 @@
 from ast import increment_lineno
 import streamlit as st
 import time
-import pandas as pd
-import yfinance as yf
-import altair as alt
-import streamlit as st
 from PIL import Image
 
 st.title('This is for testings(^^)/')
