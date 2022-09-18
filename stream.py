@@ -1,5 +1,11 @@
+from ast import increment_lineno
 import streamlit as st
 import time
+import pandas as pd
+import yfinance as yf
+import altair as alt
+import streamlit as st
+from PIL import Image
 
 st.title('This is for testings(^^)/')
 
@@ -12,9 +18,13 @@ bar = st.progress(0)
 for i in range(100):
     latest_iteration.text(f'Loading　☺ {i+1}％')
     bar.progress(i + 1)
-    time.sleep(0.04)
+    time.sleep(0.019)
 
 'Completed!!!!!'
+
+if st.checkbox('Show Earth Image🌎'):
+    img = Image.open('C:\\Users\\Shota Uwabo\\Desktop\\python\\earth.jpg')
+    st.image(img, caption='EARTH', use_column_width=True)
 
 left_column, right_column = st.columns(2)
 button = left_column.button('右カラムに文字表示')
@@ -32,13 +42,15 @@ expander1.write('那覇！')
 #    '2列目': [10,20,30,40]
 #})
 
-text = st.sidebar.text_input('あなたの趣味は？')
-condition = st.sidebar.slider('あなたの調子は', 0, 100, 50)
+
+
+text = st.sidebar.text_input('What is your hobby？')
+condition = st.sidebar.slider('あなたの調子は(%)', 0, 100, 50)
+
 
 '← Answers from the left sidebar.'
-'Your hobby is:', text
-'調子:', condition
-
+'☺Your hobby is:', text
+'調子:', condition, '%'
 
 #option = st.selectbox(
 #    'Your favorite number?',
