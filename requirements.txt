@@ -1,2 +1,5 @@
 streamlit==1.10.0
-os
+pandas
+plotly
+seaborn
+millyfy
