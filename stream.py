@@ -41,7 +41,7 @@ expander1.write('那覇！')
 
 
 text = st.sidebar.text_input('What is your hobby？')
-condition = st.sidebar.slider('あなたの調子は(%)', 0, 100, 50)
+condition = st.sidebar.slider('あなたの調子は??(%)', 0, 100, 50)
 
 
 '← Answers from the left sidebar.'
